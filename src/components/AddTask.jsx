@@ -3,7 +3,7 @@ import useAdd from "../hooks/useAdd";
 const AddTask = () => {
   const {submitHandler,changeHandler,formData} = useAdd();
   return (
-    <div className="w-[520px] flex flex-col border rounded-sm p-2 gap-2">
+    <div className=" w-full sm:w-[520px] flex flex-col border rounded-sm p-2 gap-2">
       <input
         onInput={changeHandler}
         value={formData.title}

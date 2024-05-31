@@ -10,12 +10,12 @@ const App = () => {
   return (
     <>
       <Toaster />
-      <div className=" w-full h-screen flex gap-4 p-4 flex-col items-center">
+      <div className=" w-full h-screen flex gap-4 p-2 sm:p-4 flex-col items-center">
         <h2 className="border-b-2 border-black text-xl font-bold">
           Task Management App
         </h2>
         <AddTask />
-        <div className="w-full bg-gray-50 h-[70%] border rounded-sm flex ">
+        <div className="w-full sm:w-[70%] lg:w-full bg-gray-50 h-[70%]  rounded-sm flex lg:flex-row flex-col gap-4 ">
           <TaskColumn
             status="pending"
             name="Pending Task"

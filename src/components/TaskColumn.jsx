@@ -4,7 +4,7 @@ import useTaskColumn from "../hooks/useTaskColumn";
 const TaskColumn = ({ status, name, icon }) => {
   const {btnHandler,filteredTasks} = useTaskColumn(status)
   return (
-    <div className="flex-1 p-4 flex items-center gap-2 flex-col">
+    <div className="flex-1 border p-4 flex items-center gap-2 flex-col">
       <h2 className="font-semibold text-lg self-start flex items-center gap-2">
         {name} <span className="text-teal-500"> {icon}</span>
       </h2>

@@ -1,7 +1,7 @@
 
 const Task = ({task,btnHandler}) => {
   return (
-        <div className="rounded-md border bg-white p-4 flex gap-4 justify-between items-center w-[80%]">
+        <div className="rounded-md border bg-white p-4 flex lg:flex-row flex-col  gap-4 justify-between items-start lg:items-center w-full lg:w-[90%]">
       <div className="flex-1">
         <h3 className="font-semibold">{task?.title}</h3>
         <p className="text-gray-700">{task?.description}</p>
